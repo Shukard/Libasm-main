@@ -4,7 +4,7 @@
 #include "libasm.h"
 
 int main () {
-	const char *str = "Hello World!\n";
+	const char *str = "Hello World!";
 	const int nb = 42;
 	const void *ptr = &str;
 	ssize_t asm_ext_status = 0;
@@ -13,7 +13,7 @@ int main () {
 
 	printf("Output of the ASM write with a str element : '%s'\n", str);
 	asm_ext_status = ft_write(1, str, strlen(str));
-	printf("\n");
+	printf("\n\n");
 	printf("Output of the C write with a str element : '%s'\n", str);
 	c_ext_status = write(1, str, strlen(str));
 
