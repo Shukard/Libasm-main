@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-extern char *ft_strcpy(char *, const char *);
+#include "libasm.h"
 
 #define MAX_SIZE 100
 
