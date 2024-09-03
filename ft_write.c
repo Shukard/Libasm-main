@@ -22,10 +22,10 @@ int main () {
 	printf("Exit Status of the C write for a str element : '%zd'\n", c_ext_status);
 
 	printf("Output of the ASM write with an int element : '%d'\n", nb);
-	asm_ext_status = ft_write(1, &nb + '0', sizeof(int));
+	asm_ext_status = ft_write(1, &nb, sizeof(int));
 	printf("\n");
 	printf("Output of the C write with an int element : '%d'\n", nb);
-	c_ext_status = write(1, &nb + '0', sizeof(int));
+	c_ext_status = write(1, &nb, sizeof(int));
 
 	printf("Exit Status of the ASM write for an int element : '%zd'\n", asm_ext_status);
 	printf("Exit Status of the C write for an int element : '%zd'\n", c_ext_status);
