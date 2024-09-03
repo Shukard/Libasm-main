@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-
-extern ssize_t ft_write(int, const void *, size_t);
+#include "libasm.h"
 
 int main () {
 	const char *str = "Hello World!\n";
