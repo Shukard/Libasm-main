@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-extern size_t ft_strlen(const char *);
+#include "libasm.h"
 
 int main() {
     const char *str = "Hello, World!";
