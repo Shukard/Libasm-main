@@ -16,7 +16,8 @@ int main () {
 	printf("\n\n");
 	printf("Output of the C write with a str element : '%s'\n", str);
 	c_ext_status = write(1, str, strlen(str));
-
+	printf("\n\n");
+	
 	printf("Exit Status of the ASM write for a str element : '%zd'\n", asm_ext_status);
 	printf("Exit Status of the C write for a str element : '%zd'\n", c_ext_status);
 
