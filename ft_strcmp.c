@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-extern int ft_strcmp(const char *, const char *);
+#include "libasm.h"
 
 int main() {
 	const char *str_test = "Hello World!";
