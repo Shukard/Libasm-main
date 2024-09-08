@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <errno.h>
 #include <string.h>
 #include <unistd.h>
 #include "libasm.h"
@@ -39,7 +40,16 @@ int main () {
 	printf("\n\n");
 
 	printf("Exit Status of the ASM write for a void * element : '%zd'\n", asm_ext_status);
-	printf("Exit Status of the C write for a void * element : '%zd'\n", c_ext_status);
+	printf("Exit Status of the C write for a void * element : '%zd'\n\n", c_ext_status);
 
+	printf("Test of errno in the ASM write with an invalid fd\n");
+	asm_ext_status = ft_write(42, str, strlen(str));
+	printf("Exit Status of the ASM write for errno : '%zd'\n", asm_ext_status);
+	printf("Errno error of this issue : '%s'\n", strerror(errno));
+	printf("\nTest of errno in the C write with an invalid fd\n");
+	c_ext_status = write(42, str, strlen(str));	
+	printf("Exit Status of the C write for errno : '%zd'\n", c_ext_status);
+	printf("Errno error of this issue : '%s'\n", strerror(errno));
+	
 	return 0;
 }
