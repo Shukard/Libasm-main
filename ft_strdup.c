@@ -20,11 +20,11 @@ int main() {
 	c_result = strdup(str);
 	printf("Value copied inside of the string with the c strdup : '%s'\n\n", c_result);
 
-    if (strcmp(asm_result, c_result) == 0) {
-        printf("The ASM strdup works perfectly !\n\n");
-    } else {
-        printf("An error occured during the copy ...\n\n");
-    }
+    	if (strcmp(asm_result, c_result) == 0) {
+        	printf("The ASM strdup works perfectly !\n\n");
+    	} else {
+	        printf("An error occured during the copy ...\n\n");
+    	}
 
 	free(asm_result);
 	free(c_result);
@@ -39,11 +39,11 @@ int main() {
 	c_result = strdup(lorem);
 	printf("Value copied inside of the string with the c strdup : '%s'\n\n", c_result);
 
-    if (strcmp(asm_result, c_result) == 0) {
-        printf("The ASM strdup works perfectly !\n\n");
-    } else {
-        printf("An error occured during the copy ...\n\n");
-    }
+   	 if (strcmp(asm_result, c_result) == 0) {
+        	printf("The ASM strdup works perfectly !\n\n");
+    	} else {
+	        printf("An error occured during the copy ...\n\n");
+    	}
 
 	free(asm_result);
 	free(c_result);
