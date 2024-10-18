@@ -48,6 +48,12 @@ int main() {
 	free(asm_result);
 	free(c_result);
 
+	printf("////////////////////////////// NULL TEST //////////////////////////////\n\n");
+
+	char *others = NULL;
+	printf("Test of the ASM strdup with a NULL pointer : '%s'\n", others);
+	asm_result = ft_strdup(others);
+	printf("Return of the ASM strdup : '%s'\n\n", asm_result);
 	return 0;
 }
 
